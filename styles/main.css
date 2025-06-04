@@ -1,0 +1,78 @@
+/* fonts *********************************************/
+
+/* Figtree */
+@font-face {
+    font-family: 'Figtree';
+    src: url('../assets/fonts/Figtree/Figtree-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Figtree';
+    src: url('../assets/fonts/Figtree/Figtree-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Figtree';
+    src: url('../assets/fonts/Figtree/Figtree-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* Noto Serif */
+@font-face {
+    font-family: 'Noto Serif';
+    src: url('../assets/fonts/Noto Serif/NotoSerif-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Noto Serif';
+    src: url('../assets/fonts/Noto Serif/NotoSerif-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Noto Serif';
+    src: url('../assets/fonts/Noto Serif/NotoSerif-SemiBoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Noto Serif';
+    src: url('../assets/fonts/Noto Serif/NotoSerif-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* variables *********************************************/
+
+:root {
+    /* Colours */
+    --pri-bg-col: #030E1C;
+    --sec-bg-col: #2b7dad;
+    --ter-bg-col: #5EB3E4;
+    --pri-col: #fff;
+    --sec-col: #5db1e6;
+
+    /* Typography */
+    --font-pri: 'Noto Serif', serif;
+    --font-sec: 'Figtree', sans-serif;
+}
+
+/* resets/presets *********************************************/
+
+body {
+    margin: 0;
+}
+
+hr {
+    all: unset;
+}
+

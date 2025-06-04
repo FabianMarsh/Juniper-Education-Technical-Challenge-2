@@ -55,11 +55,11 @@
 
 :root {
     /* Colours */
-    --pri-bg-col: #030E1C;
-    --sec-bg-col: #2b7dad;
-    --ter-bg-col: #5EB3E4;
+    --pri-bg-col: #ff5500;
+    --sec-bg-col: #ff3300;
+    --ter-bg-col: #ff1100;
+    --qua-bg-col: #222;
     --pri-col: #fff;
-    --sec-col: #5db1e6;
 
     /* Typography */
     --font-pri: 'Noto Serif', serif;
@@ -70,9 +70,72 @@
 
 body {
     margin: 0;
+    padding: 25px;
+    font-family: var(--font-sec);
 }
 
 hr {
     all: unset;
 }
 
+h1 {
+    font-family: var(--font-pri);
+}
+
+/* highlight *********************************************/
+
+.highlight-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 50px;
+}
+
+.highlight-card {
+    position: relative;
+    width: 300px;
+    height: 400px;
+
+    perspective: 1000px;
+    cursor: pointer;
+}
+
+.highlight-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    background: linear-gradient(45deg, var(--pri-bg-col), var(--qua-bg-col));
+
+    color: var(--pri-col);
+    text-align: center;
+
+    border-radius: 15px;
+    transform-style: preserve-3d;
+
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+
+    transition: all 0.3s ease-in-out;
+}
+
+.highlight-card:hover .highlight-content {
+    box-shadow: 0px 15px 40px rgba(255, 85, 0, 0.5);
+}
+
+.cta {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+
+    color: var(--pri-col);
+    font-size: 18px;
+    background: linear-gradient(90deg, var(--pri-bg-col), var(--sec-bg-col));
+
+    transition: background 0.3s, transform 0.3s;
+}
+
+.cta:hover {
+    background: linear-gradient(90deg, var(--sec-bg-col), var(--ter-bg-col));
+    transform: scale(1.1);
+}

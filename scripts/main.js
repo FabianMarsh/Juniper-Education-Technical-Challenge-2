@@ -1,5 +1,5 @@
-document.querySelectorAll(".highlight-card").forEach((card) => {
-    const content = card.querySelector(".highlight-content");
+document.querySelectorAll(".highlight__card").forEach((card) => {
+    const content = card.querySelector(".highlight__content");
 
     card.addEventListener("mousemove", (e) => {
         requestAnimationFrame(() => {

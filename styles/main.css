@@ -92,14 +92,14 @@ ul {
 .highlight__list {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 20px;
     flex-wrap: wrap;
-    padding: 50px;
 }
 
 .highlight__card {
     position: relative;
-    width: 300px;
+    max-width: 300px;
     height: 400px;
 
     perspective: 1000px;
@@ -108,10 +108,10 @@ ul {
 
 .highlight__content {
     position: relative;
-    width: 100%;
     height: 100%;
-    padding: 20px;
     background: linear-gradient(45deg, var(--pri-bg-col), var(--qua-bg-col));
+    padding: 20px;
+
 
     color: var(--pri-col);
     text-align: center;
